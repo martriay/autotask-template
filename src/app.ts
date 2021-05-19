@@ -10,14 +10,14 @@ app.use(cors());
 require('dotenv').config();
 
 type EnvInfo = {
-  API_KEY: string;
-  API_SECRET: string;
+  DEFENDER_API_KEY: string;
+  DEFENDER_API_SECRET: string;
   MY_SECRET: string;
 }
 
 const {
-  API_KEY: apiKey,
-  API_SECRET: apiSecret,
+  DEFENDER_API_KEY: apiKey,
+  DEFENDER_API_SECRET: apiSecret,
   MY_SECRET: mySecret,
 } = process.env as EnvInfo;
 
